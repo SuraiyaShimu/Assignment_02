@@ -87,3 +87,118 @@ nav .logo {
     text-align: center;
     justify-content: center;
 } 
+
+
+#banner{
+  width: 1500px;
+  min-height: 760px;
+  background-image: url("assets/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.position{
+  position: relative;
+  width: 100%;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.axis{
+  position: absolute;
+}
+
+.circle img{
+  width: 348px;
+  height: 348px;
+  margin-top: 80px;
+}
+
+.microphone{
+  left: 690px;
+  top: 160px;
+}
+
+.badge p{
+  width: 75px;
+  height: 38px;
+  background-color: #00FF88;
+  padding: 10px 16px;
+  color: #1A0B2E;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 1000px;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  left: 850px;
+  top: 100px;
+  z-index: 1;
+}
+
+
+.text{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.text h1{
+  font-size: 65px;
+  font-weight: 700;
+  color: white;
+}
+
+.subtitle{
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 28px;
+  color: white;
+}
+
+.buttons{
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.buttons button{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 24px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.spotify-btn{
+  background:linear-gradient(20deg, #F7E93F, #FB09B4, #9100F8); ;
+  color: #ffffff;
+  border: none;
+}
+.spotify-btn:hover{
+  background: #c525bf;
+}
+
+.sub-btn{
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #00FF88;
+}
+
+.buttons img{
+  width: 20px;
+  height: 20px;
+}
+
+.sub-btn:hover{
+  background: #c525bf;
+}

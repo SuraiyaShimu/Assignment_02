@@ -244,6 +244,71 @@ nav .menu a{
   }
 
 
+ #why-choose {
+    width: 1500px;
+    max-width: 100%;
+    padding: 80px 120px;
+    background-color:#230E3D;
+    color: #FFFFFF;
+ }
+
+#why-choose h2 {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#exclusive img{
+    height: 60px;
+    width: 60px;
+}
+
+.container>*{
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #351165;
+  border-radius: 40px;
+}
+
+#premium{
+  grid-area: premium;
+  padding-top: 140px;
+}
+
+#mobile{
+  grid-area: mobile;
+  padding-top: 55px;
+}
+
+#global{
+  grid-area: global;
+  padding-top: 55px;
+}
+
+#exclusive{
+  grid-area: exclusive;
+  padding-top: 25px;
+}
+
+#rich{
+  grid-area: rich;
+  padding-top: 45px;
+}
+
+.container{
+  height: 760px;
+  display: grid;
+  gap: 25px;
+  grid-template-areas:
+     "premium mobile mobile"
+     "premium global global"
+     "exclusive exclusive rich"
+}
+
+
+
+
 .footer-content {
     width: 1500px;
     height: 412px;

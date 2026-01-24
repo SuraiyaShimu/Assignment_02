@@ -9,7 +9,7 @@
   font-optical-sizing: auto;
 }
 nav{
-    width: 1500px;
+    width: 1600px;
     height: 92px;
     display: flex;
     justify-content: space-between;
@@ -77,7 +77,7 @@ nav .menu a{
 
 .btn{
     display: flex;
-     text-align: center;
+    text-align: center;
     justify-content: center;
 }
 
@@ -90,7 +90,7 @@ nav .menu a{
 
 
 #banner{
-  width: 1500px;
+  width: 1600px;
   min-height: 760px;
   background-image: url("assets/hero-bg.png");
   background-size: cover;
@@ -123,8 +123,18 @@ nav .menu a{
 }
 
 .microphone{
-  left: 690px;
+  left: 740px;
   top: 160px;
+}
+
+.microphone img {
+    animation: rotateMicrophone 5s linear infinite;
+}
+
+@keyframes rotateMicrophone {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
 }
 
 .badge p{
@@ -139,9 +149,18 @@ nav .menu a{
   text-align: center;
   justify-content: center;
   position: absolute;
-  left: 850px;
+  left: 890px;
   top: 100px;
   z-index: 1;
+}
+
+.badge p {
+    animation: pulseBadge 2s infinite;
+}
+
+@keyframes pulseBadge {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
 }
 
 
@@ -180,7 +199,7 @@ nav .menu a{
 }
 
 .spotify-btn{
-  background:linear-gradient(20deg, #F7E93F, #FB09B4, #9100F8); ;
+  background:linear-gradient(20deg, #F7E93F, #FB09B4, #9100F8);
   color: #ffffff;
   border: none;
 }
@@ -203,9 +222,19 @@ nav .menu a{
   background: #c525bf;
 }
 
+.buttons button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buttons button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+
 
  #about .about-container{
-    width: 1500px;
+    width: 1600px;
     height: 646px;
     text-align: center;
     background-color:#1A0B2E;
@@ -245,7 +274,7 @@ nav .menu a{
 
 
  #why-choose {
-    width: 1500px;
+    width: 1600px;
     max-width: 100%;
     padding: 80px 120px;
     background-color:#230E3D;
@@ -306,21 +335,169 @@ nav .menu a{
      "exclusive exclusive rich"
 }
 
+#featured-episodes{
+  background-color: #1A0B2E;
+  height: 1276px;
+  width: 1600px;
+}
+
+#featured-episodes h2{
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  height: 58px;
+  text-align: center;
+  padding-top: 120px;
+}
+
+.videos{
+  display:flex;
+  padding-top: 98px;
+  height: 440px;
+  gap:30px;
+  padding-left: 200px;
+}
+
+.videos-info{
+  height:440px;
+  width: 380px;
+  background-color:#250D44 ;
+  border-radius: 20px;
+}
+
+iframe{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.videos-info h5{
+  width: 332px;
+  height: 58px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin: 24px ;
+}
+
+.videos-info p{
+  margin-left: 24px;
+  color: white;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.videos-info img{
+  margin-left: 24px;
+  margin-top: 18px;
+  margin-right: 2px;
+ 
+
+}
+.videos-info span{
+  color: #00FF88;
+  font-size: 16px;
+
+  margin-bottom: 20px;
+}
+
+.videos-info {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.videos-info:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
 
 
+.videos-info iframe {
+  transition: transform 0.3s ease;
+}
+
+.videos-info:hover iframe {
+  transform: scale(1.02);
+}
+
+.host h2{
+  margin-top:120px ;
+}
+
+.alex{
+  display: flex;
+  justify-content: center;
+  height: 280px;
+  width: 1200px;
+  margin-left: 200px;
+  margin-top: 98px ;
+  background-color: #351165;
+  gap: 30px;
+  border-radius: 30px;
+}
+
+.alex span{
+  margin-left: 40px; 
+  margin-top: 40px;
+}
+
+.about-host{
+  margin-top: 50px;
+}
+.alex .link{
+  height: 40px;
+  gap: 10px;
+  
+}
+
+.about-host h1{
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.about-host p{
+  color: white;
+  font-size: 16px;
+  line-height: regular;
+  font-weight: 2000;
+  margin-bottom: 16px;
+}
+
+.about-host .link a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #2E1A57;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  border: 1px solid purple;
+}
+
+.about-host .link a img {
+  width: 24px;
+  height: 24px;
+}
+
+.about-host .link a:hover {
+  transform: scale(1.2);
+  background-color: #7609fb;
+}
 
 .footer-content {
-    width: 1500px;
-    height: 412px;
-    background-image: url("assets/footer-bg.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 80px 120px;
+  width: 1600px;
+  height: 412px;
+  background-image: url("assets/footer-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 120px;
    
 }
 
@@ -375,3 +552,12 @@ nav .menu a{
     text-align: center;
     color: #FFFFFF;
 }
+
+
+
+
+
+
+
+
+

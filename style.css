@@ -19,8 +19,6 @@ nav{
  }
 
 nav .logo {
-    width: 219px;
-    height: 32px;
     color: white;
     margin-left: 200px;
 }
@@ -552,12 +550,3 @@ iframe{
     text-align: center;
     color: #FFFFFF;
 }
-
-
-
-
-
-
-
-
-
